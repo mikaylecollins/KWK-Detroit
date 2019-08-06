@@ -48,8 +48,8 @@
 //
 //perfectEleven["gluten-free oats"] = nil
 //print(perfectEleven)
-
-var familytree = ["Mother" : "Sherri", "Father" : "Billy", "Sister" : "Madison", "Pet1" : "Jack", "Pet2" : "Bea"]
-print(familytree)
-
+//
+//var familytree = ["Mother" : "Sherri", "Father" : "Billy", "Sister" : "Madison", "Pet1" : "Jack", "Pet2" : "Bea"]
+//print(familytree)
+//
 
