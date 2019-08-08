@@ -37,4 +37,35 @@
 //
 //print("\(country) has \(food) there")
 
-}
+//}
+//var N = 100
+//
+//var power = 2
+//
+//while power <= N {
+//    print(power)
+//    power = power * 2
+//}
+// let i = 100
+//////
+//for i in 1...100{
+//
+//    if i % 3 == 0 && i % 5 == 0{
+//        print("FizzBuzz")
+//
+//        else if i % 3 == 0{
+//
+//            print("fizz")
+//
+//    else if i % 5 == 0{
+//
+//        print("Buzz")
+//
+//            else do{
+//
+//            print(i)
+//                }
+//}
+//}
+//}
+//}
