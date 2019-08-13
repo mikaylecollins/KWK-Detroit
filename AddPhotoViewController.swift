@@ -11,31 +11,63 @@ import UIKit
 class AddPhotoViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate{
 
     var imagePicker = UIImagePickerController()
-    
+   
+    var photos : [Photos] = []
+   
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        func getPhotos() {
+           // if let context = (UIApplication.shared.delegate as? AppDelegate)?.persistentContainer.viewContext {
+        }
         // Do any additional setup after loading the view.
     }
+    @IBOutlet weak var newImage: UIImageView!
     
-    @IBAction func camera(_ sender: Any) {
-    imagePicker.sourceType = .camera
-        
-    }
     
+
     @IBAction func photoLibrary(_ sender: Any) {
-   imagePicker.sourceType = .photoLibrary
+        imagePicker.sourceType = .photoLibrary
+        
+        present(imagePicker, animated: true, completion: nil)
+
     }
     
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        if let selectedImage = info[UIImagePickerController.InfoKey.originalImage] as? UIImage {
+            newImage.image = selectedImage
+        }
+    imagePicker.dismiss(animated: true, completion: nil)
+
+    }
     
     @IBOutlet weak var textField: UITextField!
     
+    @IBAction func camera(_ sender: Any) {
+        imagePicker.sourceType = .camera
+       
+        present(imagePicker, animated: true, completion: nil)
+    }
     
     @IBAction func save(_ sender: Any) {
    //imagePicker.sourceType =
+        if let context = (UIApplication.shared.delegate as? AppDelegate)?.persistentContainer.viewContext {
+            let photoToSave = Photos(entity: Photos.entity(), insertInto: context)
+            
+            photoToSave.caption = textField.text
+            
+            if let userImage = newImage.image {
+               
+                if let userImageData = userImage.pngData() {
+                    photoToSave.imageData = userImageData
+                }
+            }
+        (UIApplication.shared.delegate as? AppDelegate)?.saveContext()
+           
+            navigationController?.popViewController(animated:true)
+        }
         
-    }
-    
-    @IBOutlet weak var newImage: UIImageView!
+
     /*
     // MARK: - Navigation
 
@@ -45,12 +77,6 @@ class AddPhotoViewController: UIViewController, UIImagePickerControllerDelegate,
         // Pass the selected object to the new view controller.
     }
     */
-    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
-        if let selectedImage = info[UIImagePickerController.InfoKey.originalImage] as?
-            UIImage {
-            newImage.image = selectedImage
-            
-    }
-        imagePicker.dismiss(animated: true, completion: nil)
-    }
+
+}
 }

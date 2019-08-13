@@ -13,7 +13,7 @@
         <!--ViewFinder-->
         <scene sceneID="oQp-kA-uXI">
             <objects>
-                <tableViewController id="G7X-ZP-1Hy" sceneMemberID="viewController">
+                <tableViewController id="G7X-ZP-1Hy" customClass="PostTableTableViewController" customModule="View_Finder" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Pbg-sb-p2g">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -58,7 +58,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                 <state key="normal" title="Camera"/>
                                 <connections>
-                                    <action selector="camera:" destination="CbH-FG-mzc" eventType="touchUpInside" id="7qj-DY-aLe"/>
+                                    <action selector="camera:" destination="CbH-FG-mzc" eventType="touchUpInside" id="k8y-Mf-s7S"/>
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="download" translatesAutoresizingMaskIntoConstraints="NO" id="WgH-sc-RUZ">

@@ -13,6 +13,7 @@
 		18D7BA2D230305EC00983C22 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18D7BA2C230305EC00983C22 /* Assets.xcassets */; };
 		18D7BA30230305EC00983C22 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18D7BA2E230305EC00983C22 /* LaunchScreen.storyboard */; };
 		18D7BA3823030BE400983C22 /* AddPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D7BA3723030BE400983C22 /* AddPhotoViewController.swift */; };
+		18D7BA3A2303144800983C22 /* PostTableTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D7BA392303144800983C22 /* PostTableTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		18D7BA2F230305EC00983C22 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		18D7BA31230305EC00983C22 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		18D7BA3723030BE400983C22 /* AddPhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AddPhotoViewController.swift; path = ../../AddPhotoViewController.swift; sourceTree = "<group>"; };
+		18D7BA392303144800983C22 /* PostTableTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PostTableTableViewController.swift; path = ../../PostTableTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 			children = (
 				18D7BA22230305E900983C22 /* AppDelegate.swift */,
 				18D7BA26230305E900983C22 /* Main.storyboard */,
+				18D7BA392303144800983C22 /* PostTableTableViewController.swift */,
 				18D7BA3723030BE400983C22 /* AddPhotoViewController.swift */,
 				18D7BA2C230305EC00983C22 /* Assets.xcassets */,
 				18D7BA2E230305EC00983C22 /* LaunchScreen.storyboard */,
@@ -140,6 +143,7 @@
 			files = (
 				18D7BA23230305E900983C22 /* AppDelegate.swift in Sources */,
 				18D7BA3823030BE400983C22 /* AddPhotoViewController.swift in Sources */,
+				18D7BA3A2303144800983C22 /* PostTableTableViewController.swift in Sources */,
 				18D7BA2B230305E900983C22 /* View_Finder.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
